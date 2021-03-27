@@ -32,7 +32,7 @@ cachetools
 ujson
 pretty_errors
 fontTools
-fontTools
+asyncio
 gtts
 pyrogram
 nekos.py
