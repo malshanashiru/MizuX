@@ -216,12 +216,12 @@ def start(update: Update, context: CallbackContext):
                                 context.bot.username)),
                          InlineKeyboardButton(
                              text=" 🔊 Channel ",
-                             url="https://t.me/SenkuUpdates")
+                             url="https://t.me/Infinity_BOTs")
                      ],
                      [
                         InlineKeyboardButton(
                             text=" ❓ Help ",
-                            url="https://t.me/SenkuRobot?start=help"),
+                            url="https://t.me/MizuXBot?start=help"),
                          InlineKeyboardButton(
                             text=" ✨ Developer",
                              url="https://t.me/ImJanindu")        
