@@ -22,7 +22,7 @@ __help__ = f"""
 *Available queries:* Country Code/Country Name/Timezone Name
 • 🕐 [Timezones list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
  
-Report bugs at @InfinityJE.
+Report bugs at @InfinityJE
 
 """
 
