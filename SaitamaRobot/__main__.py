@@ -79,7 +79,7 @@ I am powerful group management bot. You can find my list of available commands w
 """
 
 HELP_STRINGS = """
-*Main* commands available:
+*Main* commands available[:](https://telegra.ph/file/57a6249c2237691582a48.jpg)
 
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
