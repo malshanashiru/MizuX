@@ -18,7 +18,7 @@ from datetime import datetime
 import sys
 import traceback
 from functools import wraps
-from Mizuki import OWNER_ID
+from SaitamaRobot import OWNER_ID
 
 def get_user(message: Message, text: str) -> [int, str, None]:
     if text is None:
