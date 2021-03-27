@@ -226,3 +226,25 @@ async def inuka(client,message):
         await message.reply_text(result)
       except CFError as e:
              print(e)
+
+
+__help__ = """
+*Chatbot* allows Mizu to talk and provides a more interactive group chat experience.
+
+*Admins only cmds:*
+ • `/chatbot on`*:* Enables Chatbot mode in the chat.
+ • `/chatbot off`*:* Disables Chatbot mode in the chat.
+
+Reports bugs at @ImJanindu
+
+*Powered by Mizu AI* from @InfinityJE
+
+ • Turn on chat bot and reply to any message of Mizu to start chat with her!
+ • Also you can chat with Mizu in groups by putting the word Mizu in messages you send to the group.
+
+The word *Mizu* use to get attention of Mizu, then bot will reply to you.
+
+Note: Chatbot is only works in groups.
+"""
+
+__mod_name__ = "Mizu Chat"
