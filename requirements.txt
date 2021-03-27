@@ -13,6 +13,7 @@ zalgo-text
 geopy
 nltk
 psutil
+Markdown>=3.3.4
 aiohttp>=2.2.5
 Pillow>=4.2.0
 CurrencyConverter
