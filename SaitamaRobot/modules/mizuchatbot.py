@@ -103,6 +103,8 @@ async def hmm(client,message):
    pro = pro.replace('Thergiakis Eftichios','@ImJanindu')
   if "Out of all ninja turtle" in result:
    pro = "Sorry! looks I missed that. I'm at your service ask anthing sir?"
+  if "Mizuki is dead as fuck." in result:
+   pro = "I'm at your service ask anthing sir?"
    try:
       await daisyx.send_chat_action(message.chat.id, "typing")
       await message.reply_text(pro)
@@ -156,6 +158,8 @@ async def inuka(client,message):
   if "Thergiakis Eftichios" in result:
    pro = result
    pro = pro.replace('Thergiakis Eftichios','@ImJanindu')
+  if "Mizuki is dead as fuck." in result:
+   pro = "I'm at your service ask anthing sir?"
    try:
       await daisyx.send_chat_action(message.chat.id, "typing")
       await message.reply_text(pro)
@@ -208,6 +212,8 @@ async def inuka(client,message):
      pro = pro.replace('Thergiakis Eftichios','@ImJanindu')
     if "Out of all ninja turtle" in result:
      pro = "Sorry! looks I missed that. I'm at your service ask anthing sir?"
+    if "Mizuki is dead as fuck." in result:
+   pro = "I'm at your service ask anthing sir?"
      try:
         await daisyx.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
