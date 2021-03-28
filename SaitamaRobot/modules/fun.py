@@ -12,7 +12,7 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
 
-GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
+STICKER_ID = "CAACAgEAAxkBAAIEDGBf3hnWF7t-iCz_JtaMULPH8gN6AALvAANJXeFGY3k76p_zXo4eBA"
 
 
 @run_async
@@ -28,12 +28,12 @@ def sanitize(update: Update, context: CallbackContext):
         if message.reply_to_message
         else message.from_user.first_name
     )
-    reply_animation = (
-        message.reply_to_message.reply_animation
+    reply_sticker = (
+        message.reply_to_message.reply_sticker
         if message.reply_to_message
-        else message.reply_animation
+        else message.reply_sticker
     )
-    reply_animation(GIF_ID, caption=f"*Sanitizes {name}*")
+    reply_sticker(STICKER_ID)
 
 
 @run_async
@@ -340,15 +340,15 @@ __help__ = """
  • `/runs`*:* reply a random string from an array of replies
  • `/slap`*:* slap a user, or get slapped if not a reply
  • `/shrug`*:* get shrug XD
- • `/table`*:* get flip/unflip :v
+ • `/table`*:* get flip/unflip
  • `/decide`*:* Randomly answers yes/no/maybe
  • `/toss`*:* Tosses A coin
- • `/bluetext`*:* check urself :V
+ • `/bluetext`*:* check urself
  • `/roll`*:* Roll a dice
- • `/rlg`*:* Join ears,nose,mouth and create an emo ;-;
+ • `/rlg`*:* Join ears,nose,mouth and create an emoji
  • `/shout <keyword>`*:* write anything you want to give loud shout
  • `/weebify <text>`*:* returns a weebified text
- • `/sanitize`*:* always use this before /pat or any contact
+ • `/sanitize`*:* always use this before `/pat` or any contact
  • `/pat`*:* pats a user, or get patted
  • `/8ball`*:* predicts using 8ball method 
  • `/meme`*:* sends a random meme form reddit `r/animemes`
