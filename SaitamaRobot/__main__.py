@@ -74,25 +74,18 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
+Hi {}, my name is *{}*!
 
 I am powerful group management bot. You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-*Main* commands available:
+Hey! My name is *MizuX*. I am a group management bot, here to help you get around and keep the order in your groups!
 
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-""".format(
-    dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
-)
+I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
+"""
 
-SAITAMA_IMG = "https://telegra.ph/file/e0187a847cf2519e3707f.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/7e3cc4aa4ef44051acbe7.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](ko-fi.com/sawada)"""
