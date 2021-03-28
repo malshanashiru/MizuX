@@ -85,7 +85,7 @@ Hey! My name is *MizuX*. I am a group management bot, here to help you get aroun
 I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
 """
 
-SAITAMA_IMG = "https://telegra.ph/file/7e3cc4aa4ef44051acbe7.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/5b92d8104ad4203a37699.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](ko-fi.com/sawada)"""
