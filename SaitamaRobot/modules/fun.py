@@ -12,9 +12,6 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
 
-STICKER_ID = "CAACAgEAAxkBAAIEDGBf3hnWF7t-iCz_JtaMULPH8gN6AALvAANJXeFGY3k76p_zXo4eBA"
-
-
 @run_async
 def runs(update: Update, context: CallbackContext):
     update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
@@ -22,19 +19,7 @@ def runs(update: Update, context: CallbackContext):
 
 @run_async
 def sanitize(update: Update, context: CallbackContext):
-    message = update.effective_message
-    name = (
-        message.reply_to_message.from_user.first_name
-        if message.reply_to_message
-        else message.from_user.first_name
-    )
-    reply_sticker = (
-        message.reply_to_message.reply_sticker
-        if message.reply_to_message
-        else message.reply_sticker
-    )
-    reply_sticker(STICKER_ID)
-
+    update.effective_message.reply_text("Lmao, keep one meter distance 🙂")
 
 @run_async
 def sanitize(update: Update, context: CallbackContext):
@@ -351,7 +336,7 @@ __help__ = """
  • `/sanitize`*:* always use this before `/pat` or any contact
  • `/pat`*:* pats a user, or get patted
  • `/8ball`*:* predicts using 8ball method 
- • `/meme`*:* sends a random meme form reddit `r/animemes`
+ • `/meme`*:* sends a random meme form reddit or animemes
 """
 
 MEME_HANDLER = DisableAbleCommandHandler("meme", meme)
