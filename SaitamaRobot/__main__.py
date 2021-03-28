@@ -80,7 +80,7 @@ I am powerful group management bot. You can find my list of available commands w
 """
 
 HELP_STRINGS = """
-*Main* commands available[:](https://telegra.ph/file/57a6249c2237691582a48.jpg)
+*Main* commands available:
 
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
@@ -92,7 +92,7 @@ HELP_STRINGS = """
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/57a6249c2237691582a48.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/e0187a847cf2519e3707f.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](ko-fi.com/sawada)"""
