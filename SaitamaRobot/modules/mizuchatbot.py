@@ -95,12 +95,12 @@ async def hmm(client,message):
   response = requests.request("POST", url, data=payload, headers=headers)
   lodu = response.json()
   result = (lodu['message']['text'])
-  if 'My name is Jessica' in result:
+  if 'My name is Jessica.' in result:
    pro = result
-   pro = pro.replace('My name is Jessica','My name is Mizu.')
-  if "Thergiakis Eftichios" in result:
+   pro = pro.replace('My name is Jessica.','My name is Mizu.')
+  if "Thergiakis Eftichios." in result:
    pro = result
-   pro = pro.replace('@ImJanindu','Thergiakis Eftichios')
+   pro = pro.replace('Thergiakis Eftichios.','@ImJanindu')
   if "Out of all ninja turtle" in result or "Mizuki is dead as fuck." in result:
    pro = "I'm at your service ask anthing sir?"
    try:
@@ -150,12 +150,12 @@ async def inuka(client,message):
   response = requests.request("POST", url, data=payload, headers=headers)
   lodu = response.json()
   result = (lodu['message']['text'])
-  if 'My name is Jessica' in result:
+  if 'My name is Jessica.' in result:
    pro = result
-   pro = pro.replace('My name is Jessica','My name is Mizu.')
-  if "Thergiakis Eftichios" in result:
+   pro = pro.replace('My name is Jessica.','My name is Mizu.')
+  if "Thergiakis Eftichios." in result:
    pro = result
-   pro = pro.replace('@ImJanindu','Thergiakis Eftichios')
+   pro = pro.replace('Thergiakis Eftichios.','@ImJanindu')
   if "Mizuki is dead as fuck." in result:
    pro = "I'm at your service ask anthing sir?"
    try:
@@ -202,12 +202,12 @@ async def inuka(client,message):
     response = requests.request("POST", url, data=payload, headers=headers)
     lodu = response.json()
     result = (lodu['message']['text'])
-    if 'My name is Jessica' in result:
+    if 'My name is Jessica.' in result:
      pro = result
-     pro = pro.replace('My name is Jessica','My name is Mizu.')
-    if "Thergiakis Eftichios" in result:
+     pro = pro.replace('My name is Jessica.','My name is Mizu.')
+    if "Thergiakis Eftichios." in result:
      pro = result
-     pro = pro.replace('@ImJanindu','Thergiakis Eftichios')
+     pro = pro.replace('Thergiakis Eftichios.','@ImJanindu')
     if "Out of all ninja turtle" in result or "Mizuki is dead as fuck." in result:
      pro = "I'm at your service ask anthing sir?"
      try:
