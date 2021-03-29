@@ -3,7 +3,7 @@ import threading
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
 from SaitamaRobot.modules.helper_funcs.msg_types import Types
-from SaitamaRobot.modules.sql import BASE, SESSION
+from SaitamaRobot.modules.sql_extended import BASE, SESSION
 
 
 class CustomFilters(BASE):
