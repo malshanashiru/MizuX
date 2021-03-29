@@ -105,7 +105,7 @@ async def hmm(client,message):
    pro = "I'm at your service ask anthing sir?"
   elif "Thergiakis Eftichios." in result:
    pro = "I'm cute girl and I was made by @ImJanindu."
-  elif "My name is Jessica." in result:
+  if "My name is Jessica." in result:
    pro = "My name is Mizu."
    try:
       await daisyx.send_chat_action(message.chat.id, "typing")
@@ -164,7 +164,7 @@ async def inuka(client,message):
    pro = "I'm at your service ask anthing sir?"
   elif "Thergiakis Eftichios." in result:
    pro = "I'm cute girl and I was made by @ImJanindu."
-  elif "My name is Jessica." in result:
+  if "My name is Jessica." in result:
    pro = "My name is Mizu."
    try:
       await daisyx.send_chat_action(message.chat.id, "typing")
@@ -220,7 +220,7 @@ async def inuka(client,message):
      pro = "I'm at your service ask anthing sir?"
     elif "Thergiakis Eftichios." in result:
      pro = "I'm cute girl and I was made by @ImJanindu."
-    elif "My name is Jessica." in result:
+    if "My name is Jessica." in result:
      pro = "My name is Mizu."
      try:
         await daisyx.send_chat_action(message.chat.id, "typing")
