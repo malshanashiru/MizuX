@@ -29,7 +29,7 @@ from SaitamaRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from SaitamaRobot.modules.sql import cust_filters_sql as sql
+from SaitamaRobot.modules.sql_extended import cust_filters_sql as sql
 
 from SaitamaRobot.modules.connection import connected
 
