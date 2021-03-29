@@ -16,10 +16,25 @@ from telegram.ext import CallbackContext, run_async
 def runs(update: Update, context: CallbackContext):
     update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
 
+@run_async
+def runs(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
+
 
 @run_async
 def sanitize(update: Update, context: CallbackContext):
-    update.effective_message.reply_text("Lmao, keep one meter distance 🙂")
+    message = update.effective_message
+    name = (
+        message.reply_to_message.from_user.first_name
+        if message.reply_to_message
+        else message.from_user.first_name
+    )
+    reply_text = (
+        message.reply_to_message.reply_text
+        if message.reply_to_message
+        else message.reply_text
+    )
+    reply_text(f"Lmao {name}, keep one meter distance!")
 
 @run_async
 def sanitize(update: Update, context: CallbackContext):
