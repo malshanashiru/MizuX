@@ -100,7 +100,7 @@ async def hmm(client,message):
    pro = pro.replace('My name is Jessica','My name is Mizu.')
   if "Thergiakis Eftichios" in result:
    pro = result
-   pro = pro.replace('Thergiakis Eftichios','@ImJanindu')
+   pro = pro.replace('@ImJanindu')
   if "Out of all ninja turtle" in result or "Mizuki is dead as fuck." in result:
    pro = "I'm at your service ask anthing sir?"
    try:
@@ -155,7 +155,7 @@ async def inuka(client,message):
    pro = pro.replace('My name is Jessica','My name is Mizu.')
   if "Thergiakis Eftichios" in result:
    pro = result
-   pro = pro.replace('Thergiakis Eftichios','@ImJanindu')
+   pro = pro.replace('@ImJanindu')
   if "Mizuki is dead as fuck." in result:
    pro = "I'm at your service ask anthing sir?"
    try:
@@ -207,7 +207,7 @@ async def inuka(client,message):
      pro = pro.replace('My name is Jessica','My name is Mizu.')
     if "Thergiakis Eftichios" in result:
      pro = result
-     pro = pro.replace('Thergiakis Eftichios','@ImJanindu')
+     pro = pro.replace('@ImJanindu')
     if "Out of all ninja turtle" in result or "Mizuki is dead as fuck." in result:
      pro = "I'm at your service ask anthing sir?"
      try:
