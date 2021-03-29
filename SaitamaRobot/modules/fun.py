@@ -178,30 +178,6 @@ def shrug(update: Update, context: CallbackContext):
 
 
 @run_async
-def bluetext(update: Update, context: CallbackContext):
-    msg = update.effective_message
-    reply_text = (
-        msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
-    )
-    reply_text(
-        "/BLUE /TEXT\n/MUST /CLICK\n/I /AM /A /STUPID /ANIMAL /THAT /IS /ATTRACTED /TO /COLORS"
-    )
-
-
-@run_async
-def rlg(update: Update, context: CallbackContext):
-    eyes = random.choice(fun_strings.EYES)
-    mouth = random.choice(fun_strings.MOUTHS)
-    ears = random.choice(fun_strings.EARS)
-
-    if len(eyes) == 2:
-        repl = ears[0] + eyes[0] + mouth[0] + eyes[1] + ears[1]
-    else:
-        repl = ears[0] + eyes[0] + mouth[0] + eyes[0] + ears[1]
-    update.message.reply_text(repl)
-
-
-@run_async
 def decide(update: Update, context: CallbackContext):
     reply_text = (
         update.effective_message.reply_to_message.reply_text
@@ -323,9 +299,7 @@ __help__ = """
  • `/table`*:* get flip/unflip
  • `/decide`*:* Randomly answers yes/no/maybe
  • `/toss`*:* Tosses A coin
- • `/bluetext`*:* check urself
  • `/roll`*:* Roll a dice
- • `/rlg`*:* Join ears,nose,mouth and create an emoji
  • `/shout <keyword>`*:* write anything you want to give loud shout
  • `/weebify <text>`*:* returns a weebified text
  • `/sanitize`*:* always use this before `/pat` or any contact
@@ -342,8 +316,6 @@ PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
 TOSS_HANDLER = DisableAbleCommandHandler("toss", toss)
 SHRUG_HANDLER = DisableAbleCommandHandler("shrug", shrug)
-BLUETEXT_HANDLER = DisableAbleCommandHandler("bluetext", bluetext)
-RLG_HANDLER = DisableAbleCommandHandler("rlg", rlg)
 DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
 EIGHTBALL_HANDLER = DisableAbleCommandHandler("8ball", eightball)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
@@ -360,8 +332,6 @@ dispatcher.add_handler(PAT_HANDLER)
 dispatcher.add_handler(ROLL_HANDLER)
 dispatcher.add_handler(TOSS_HANDLER)
 dispatcher.add_handler(SHRUG_HANDLER)
-dispatcher.add_handler(BLUETEXT_HANDLER)
-dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
@@ -373,8 +343,6 @@ __command_list__ = [
     "roll",
     "toss",
     "shrug",
-    "bluetext",
-    "rlg",
     "decide",
     "table",
     "pat",
@@ -391,8 +359,6 @@ __handlers__ = [
     ROLL_HANDLER,
     TOSS_HANDLER,
     SHRUG_HANDLER,
-    BLUETEXT_HANDLER,
-    RLG_HANDLER,
     DECIDE_HANDLER,
     TABLE_HANDLER,
     SANITIZE_HANDLER,
