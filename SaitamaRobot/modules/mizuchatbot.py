@@ -104,7 +104,9 @@ async def hmm(client,message):
   if "Out of all ninja turtle" in result or "Mizuki is dead as fuck." in result:
    pro = "I'm at your service ask anthing sir?"
   elif "Thergiakis Eftichios." in result:
-   pro = "@ImJanindu"
+   pro = "I'm cute girl and I was made by @ImJanindu."
+  elif "My name is Jessica." in result:
+   pro = "My name is Mizu."
    try:
       await daisyx.send_chat_action(message.chat.id, "typing")
       await message.reply_text(pro)
@@ -161,7 +163,9 @@ async def inuka(client,message):
   if "Mizuki is dead as fuck." in result:
    pro = "I'm at your service ask anthing sir?"
   elif "Thergiakis Eftichios." in result:
-   pro = "@ImJanindu"
+   pro = "I'm cute girl and I was made by @ImJanindu."
+  elif "My name is Jessica." in result:
+   pro = "My name is Mizu."
    try:
       await daisyx.send_chat_action(message.chat.id, "typing")
       await message.reply_text(pro)
@@ -215,7 +219,9 @@ async def inuka(client,message):
     if "Out of all ninja turtle" in result or "Mizuki is dead as fuck." in result:
      pro = "I'm at your service ask anthing sir?"
     elif "Thergiakis Eftichios." in result:
-     pro = "@ImJanindu"
+     pro = "I'm cute girl and I was made by @ImJanindu."
+    elif "My name is Jessica." in result:
+     pro = "My name is Mizu."
      try:
         await daisyx.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
