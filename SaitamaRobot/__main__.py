@@ -74,21 +74,21 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is *{}*!
+Hi {}, my name is *🌷 T w i n c y 🌷*!
 
 I am cute group management bot. You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-Hey! My name is *MizuX*. I am a group management bot, here to help you get around and keep the order in your groups!
+Hey! My name is *🌷 T w i n c y 🌷*. I am a powerfull group management bot, here to help you get around and keep the order in your groups!
 
 I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
 """
 
-SAITAMA_IMG = "https://telegra.ph/file/5b92d8104ad4203a37699.jpg"
+SAITAMA_IMG = "https://telegra.ph/T-w-i-n-c-y-04-20"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada)"""
+ You can support the project via [Paypal](paypal.me/ashirumalshan)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -173,7 +173,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="✘ Back ✘", callback_data="help_back")]]
                     ),
                 )
             elif args[0].lower() == "markdownhelp":
@@ -205,26 +205,26 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                         InlineKeyboardButton(
-                            text=" ➕ Add Me ",
+                            text=" ✚ Add Me ✚",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                          InlineKeyboardButton(
-                             text=" 🔊 Channel ",
-                             url="https://t.me/Infinity_BOTs")
+                             text=" ❖ Developer ❖ ",
+                             url="https://t.me/ashirumalshan")
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ❓ Help ",
-                            url="https://t.me/MizuXBot?start=help"),
+                            text=" ❒ Group ❒ ",
+                            url="http://t.me/unlimitedworld_TM_group"),
                          InlineKeyboardButton(
-                            text=" ✨ Developer",
-                             url="https://t.me/ImJanindu")        
+                            text=" ❍ Channel ❍ ",
+                             url="http://t.me/unlimitedworld_TM_channel")        
                        
                      ],
                      [
                         InlineKeyboardButton(
-                             text=" #⃣ Source Code ",
-                             url="https://github.com/ImJanindu/MizuX")
+                             text=" ❔ Help ❔ ",
+                             url="https://t.me/Uwgrouphelper_bot?start=help")
                     
                     ]
                    ]
@@ -293,7 +293,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="✘ Back ✘", callback_data="help_back")]]
                 ),
             )
 
@@ -386,7 +386,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="✘ Back ✘", callback_data="help_back")]]
             ),
         )
 
@@ -459,7 +459,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back",
+                                text="✘ Back ✘",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -535,7 +535,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings",
+                                text="✎ Settings ✎",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
